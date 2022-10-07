@@ -8,7 +8,10 @@
         <h1>{{persona.nombre}} {{persona.apellido}}</h1>
       <h2>{{persona.profesion}}</h2>
       <h3>{{persona.nivel}}</h3>
-      <button routerLink="/editarPersona/{{persona.id}}"class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+      <div *ngIf="isLogged">
+        <button routerLink="/editarPersona/{{persona.id}}"class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+      </div>
+
       <app-acerca-de-mi></app-acerca-de-mi>
       </div>
     </div>

@@ -8,7 +8,7 @@ import { Idiomas } from '../Modelos/idiomas';
 })
 export class IdiomasService {
 
-  URL= 'http://localhost:8080/idioma/'
+  URL = 'https://asalgueroargprogback.herokuapp.com/idioma/'
 
   constructor(private http: HttpClient) { }
 

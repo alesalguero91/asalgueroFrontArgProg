@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonaService {
 
-  URL = 'http://localhost:8080/persona/';
+  URL = 'https://asalgueroargprogback.herokuapp.com/persona/';
 
   constructor(private http: HttpClient) { }
 

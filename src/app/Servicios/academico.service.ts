@@ -8,7 +8,7 @@ import { Academico } from '../Modelos/academicoModel';
 })
 export class AcademicoService {
 
-  URL = 'http://localhost:8080/academico/';
+  URL = 'https://asalgueroargprogback.herokuapp.com/academico/';
 
   constructor(private http: HttpClient) { }
 

@@ -10,11 +10,11 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  authURL = 'http://localhost:8080/auth/'
+  URL = 'https://asalgueroargprogback.herokuapp.com/auth/'
 
   constructor(private http: HttpClient) { }
 
   public login(login: login):Observable<JwtDto>{
-    return this.http.post<JwtDto>(this.authURL+'login', login)
+    return this.http.post<JwtDto>(this.URL+'login', login)
   }
 }

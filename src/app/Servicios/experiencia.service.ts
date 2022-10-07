@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class ExperienciaService {
 
-  URL = 'http://localhost:8080/experiencia/';
+  URL = 'https://asalgueroargprogback.herokuapp.com/experiencia/';
 
   constructor(private http: HttpClient) { }
 

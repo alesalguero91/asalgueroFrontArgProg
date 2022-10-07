@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Persona } from 'src/app/Modelos/personaModel';
 import { PersonaService } from 'src/app/Servicios/persona.service';
+import { TokenService } from 'src/app/Servicios/token.service';
 
 @Component({
   selector: 'app-persona',
@@ -11,13 +12,20 @@ export class PersonaComponent implements OnInit {
 
   persona: Persona = new Persona("","","","","")
 
-  constructor(private personaService: PersonaService) { }
+  isLogged= false
+
+  constructor(private personaService: PersonaService, private tokenService: TokenService) { }
 
   ngOnInit(): void {
     this.personaService.traerPersona().subscribe(
       data=>{this.persona=data}
       )
-      console.log(this.persona)
+
+      if(this.tokenService.getToken()){
+        this.isLogged=true
+      } else {
+        this.isLogged = false
+      }
   }
 
 }
