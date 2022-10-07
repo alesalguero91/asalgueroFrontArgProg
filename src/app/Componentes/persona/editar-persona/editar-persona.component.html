@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div id="editPers">
+  <div class="container text-light">
+    <h3 style="text-align: center;">Editar Experiencia</h3>
+  <div class="row">
+    <div class="col-lg-6 col-xs-12">
+      <div style="text-align: center;">
+        <img src="../../../assets/imagenes/logoCobraKai.png" class="logI">
+      <br>
+      <img src="../../../assets/imagenes/Cobra-Kai-logo-white.png" class="logI">
+      </div>
+    </div>
+    <div class="col-lg-6 col-xs-12">
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+        </div>
+        <div class="form-group">
+          <label for="profesion">Profesion</label>
+          <input type="text" class="form-control" id="profesion" name="profesion" [(ngModel)]="persona.profesion" required>
+        </div>
+        <div class="form-group">
+          <label for="nivel">Nivel</label>
+          <input type="text" class="form-control" id="nivel" name="nivel" [(ngModel)]="persona.nivel" required>
+        </div>
+
+        <div style="margin: 20px; text-align: center;">
+          <button class="btn">
+            Actualizar
+          </button>
+        </div>
+        <div>
+          <app-boton-volver></app-boton-volver>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

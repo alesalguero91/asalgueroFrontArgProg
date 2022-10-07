@@ -1,0 +1,42 @@
+<div class="container">
+  <h3>Idioma</h3>
+
+
+  <div class="row">
+
+
+
+        <div>
+          <div class= "row">
+            <div *ngFor="let lg of idiomas" style="padding: 20px;" class="col-lg-6 col-xs-12">
+              <div>
+
+                <h6>{{lg.idiom}}</h6>
+                <span>Nivel oral: {{lg.oral}} %</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                    style="width:{{lg.oral}}%"></div>
+                </div>
+                <span>Nivel escrito: {{lg.escrito}} %</span>
+                <div class="progress">
+                  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                    style="width:{{lg.escrito}}%"></div>
+                </div>
+                <div *ngIf="isLogged" style="text-align: right;">
+                  <button class="btn btn-warning" routerLink="/editarIdioma/{{lg.id}}"class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+                  <button class="btn btn-danger" (click)="delete(lg.id)">
+                    <i class="bi bi-trash3-fill"></i></button>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+
+
+      <div *ngIf="isLogged" style="text-align: center;">
+        <button class="btn btn-light" routerLink="/crearIdioma"><i class="bi bi-plus"><br>Agregar Idiomas</i></button>
+      </div>
+
+</div>
+

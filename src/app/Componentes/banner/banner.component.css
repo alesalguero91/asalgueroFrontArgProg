@@ -1,0 +1,29 @@
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/imagenes/cobraKaiBanner.png);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+
+  justify-content: center;
+
+}
+
+#cobraLogo{
+  width: 300px;
+}
+.container{
+  height: 100vw;
+  width: 100vh;
+}
+.saludo{
+
+  color: azure;
+  text-align: right;
+  padding-top: 50px;
+  font-size: 30px;
+  padding-right: 30px;
+  font-family:Impact, 'Arial Narrow Bold', sans-serif
+
+}

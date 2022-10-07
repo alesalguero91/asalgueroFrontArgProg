@@ -1,0 +1,36 @@
+<app-header></app-header>
+<div id="editSk">
+  <div class="container text-light">
+    <h3 style="text-align: center;">Editar Experiencia</h3>
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <div style="text-align: center;">
+          <img src="../../../assets/imagenes/logoCobraKai.png" class="logI">
+        <br>
+        <img src="../../../assets/imagenes/Cobra-Kai-logo-white.png" class="logI">
+        </div>
+      </div>
+      <div class="col-lg-6 col-xs-12">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="herramienta">Nombre de la Herramienta</label>
+            <input type="text" class="form-control" id="herramienta" name="herramienta" [(ngModel)]="skill.herramienta" required>
+          </div>
+          <div class="form-group">
+            <label for="nivel">Nivel en %</label>
+            <input type="text" class="form-control" id="nivel" name="nivel" [(ngModel)]="skill.nivel" required>
+          </div>
+          <div style="margin: 20px; text-align: center;">
+            <button class="btn">
+              Actualizar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <app-boton-volver></app-boton-volver>
+      <br>
+    </div>
+  </div>
+</div>

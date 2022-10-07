@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div id="crearExp">
+  <div class="container text-light">
+    <h3 style="text-align: center;">Agregar Experiencia</h3>
+    <br>
+    <div></div>
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <div style="text-align: center;">
+          <img src="../../../assets/imagenes/logoCobraKai.png" class="logI">
+        <br>
+        <img src="../../../assets/imagenes/Cobra-Kai-logo-white.png" class="logI">
+        </div>
+      </div>
+      <div class="col-lg-6 col-xs-12">
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="empresa">Nombre de la empresa</label>
+            <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="empresa" required>
+          </div>
+          <div class="form-group">
+            <label for="puesto">Puesto</label>
+            <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="puesto" required>
+          </div>
+          <div class="form-group">
+            <label for="anioIngExp">Año de Ingreso</label>
+            <input type="text" class="form-control" id="anioIngExp" name="anioIngExp" [(ngModel)]="anioIngExp" required>
+          </div>
+          <div class="form-group">
+            <label for="anioEgExp">Año de Egreso</label>
+            <input type="text" class="form-control" id="anioEgExp" name="anioEgExp" [(ngModel)]="anioEgExp" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcionExp">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="descripcionExp"
+              required>
+          </div>
+          <div style="text-align: center;">
+            <button class="btn" style="margin-top: 30px;">
+              Agregar experiencia
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div>
+      <app-boton-volver></app-boton-volver>
+      
+    </div>
+  </div>
+</div>

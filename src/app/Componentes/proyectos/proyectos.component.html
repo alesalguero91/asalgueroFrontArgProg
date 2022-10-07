@@ -1,0 +1,31 @@
+<div class="container text-light">
+
+  <div style="text-align: center;">
+    <div *ngFor="let proy of proyecto">
+      <div class="row">
+        <div class="col-12">
+          <h4>{{proy.nombreProy}}</h4>
+        </div>
+
+        <div class="col-lg-4 col-xs-12" style="text-align: center;"  >
+          <img src="{{proy.imgProy}}" alt="" class="img-fluid">
+        </div>
+        <div class="col-lg-8 col-xs-12" style="padding-left: 100px; text-align: left;">
+          <span>Detalles: </span>
+          <p>{{proy.detalleProy}}</p>
+          <a href="{{proy.urlProy}}">visitar Proyecto</a>
+         </div>
+      </div>
+
+      <div *ngIf="isLogged" style="text-align: right;">
+        <button routerLink="/editarProyecto/{{proy.id}}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+        <button (click)="delete(proy.id)" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
+      </div>
+    </div>
+    <div *ngIf="isLogged" style="text-align: center; margin: 20px">
+      <button routerLink="/crearProyecto" class="btn btn-light"><i class="bi bi-plus"><br>Agregar Proyecto</i></button>
+      <br><br>
+    </div>
+  </div>
+</div>
+

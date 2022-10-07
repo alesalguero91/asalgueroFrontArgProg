@@ -1,0 +1,51 @@
+<div id="log">
+  <div class="container text-light">
+    <div style="text-align: center;">
+      <h1>Iniciar Sesion</h1>
+      <br>
+    </div>
+    <div class="row">
+    <div class="col-lg-6 col-xs-12">
+      <div style="text-align: center;">
+        <img src="../../../assets/imagenes/logoCobraKai.png" class="logI">
+      <br>
+      <img src="../../../assets/imagenes/Cobra-Kai-logo-white.png" class="logI">
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-xs-12"  style="text-align: center;">
+
+      <div>
+        <form #f="ngForm" (ngSubmit)="onLogin()" novalidate id="formulario">
+
+          <div class="form-outline form-white mb-4">
+            <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-sm"
+              [(ngModel)]="nombreUsuario" required/>
+            <label class="form-label" for="nombreUsuario">Usuario</label>
+          </div>
+
+          <div class="form-outline form-white mb-4">
+            <input type="password" id="password" name="password" class="form-control form-control-sm"
+              [(ngModel)]="password" required />
+            <label class="form-label" for="password">Password</label>
+          </div>
+
+
+          <div style="text-align: center;">
+            <button class="btn btn-lg px-5" type="submit">Entrar</button>
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+      </div>
+    <div>
+      <app-boton-volver></app-boton-volver>
+      <br>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,12 @@
+
+
+div{
+  background-color: rgb(12, 12, 14);
+  width: 100vw;
+}
+
+.container{
+  text-align: center;
+  position: inherit;
+  padding: 15px;
+}

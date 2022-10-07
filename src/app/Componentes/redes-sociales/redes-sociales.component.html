@@ -1,0 +1,14 @@
+<div class="row">
+  <div>
+    <div style="margin-right: 20px;">
+      <a href="https://www.facebook.com/profile.php?id=100006268247561" style="margin-right: 10px;"><img src="../../../assets/imagenes/facebook.png" alt=""></a>
+      <a href="https://www.instagram.com/nestorale.salguero91/" style="margin-right: 10px;"><img src="../../../assets/imagenes/instagram.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/n%C3%A9stor-alejandro-salguero-47aa39225" style="margin-right: 10px;"><img src="../../../assets/imagenes/linkedin.png" alt=""></a>
+      <a  type="button" class="btnLog" (click)="login()"
+      *ngIf="!isLogged">Ingresar</a>
+      <a  type="button" class="btnLog" (click)="onLogOut()"
+      *ngIf="isLogged">Salir</a>
+
+    </div>
+  </div>
+</div>

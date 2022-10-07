@@ -1,0 +1,32 @@
+
+<div class="container">
+<div class="row">
+  <div class="col-lg-6 col-xs-12" *ngFor="let exp of experiencia">
+
+        <div class="row">
+          
+          <div class="col-12">
+            <h5>{{exp.empresa}}</h5>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <h6>{{exp.puesto}}</h6>
+            <span>Descripcion:</span>
+            <p>{{exp.descripcion}}</p>
+          </div>
+          <div class="col-lg-6 col-xs-12">
+            <p>Año de ingreso: {{exp.anioIngExp}}</p>
+            <p>Año de egreso: {{exp.anioEgExp}}</p>
+          </div>
+        </div>
+        <div *ngIf="isLogged" class="col-12" style="text-align:right">
+          <button routerLink="/editarExperiencia/{{exp.id}}" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+          <button (click)="delete(exp.id)" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
+        </div>
+
+
+  </div>
+  <div *ngIf="isLogged" style="text-align: center; margin: 20px;">
+    <button routerLink="/crearExperiencia" class="btn btn-light"><i class="bi bi-plus"><br>Agregar experiencia</i></button>
+  </div>
+</div>
+</div>

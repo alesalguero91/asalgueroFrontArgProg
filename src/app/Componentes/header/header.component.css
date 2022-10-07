@@ -1,0 +1,9 @@
+div{
+  background-color: rgb(12, 12, 14);
+  width: 100vw;
+}
+
+app-redes-sociales{
+  float: right;
+  margin-top: 50px;
+}

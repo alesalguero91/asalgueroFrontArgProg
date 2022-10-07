@@ -1,0 +1,50 @@
+<app-header></app-header>
+<div id="EditExp">
+  <div class="container text-light">
+    <h3 style="text-align: center;">Editar Experiencia</h3>
+    <div class="row">
+      <div class="col-lg-6 col-xs-12">
+        <div style="text-align: center;">
+          <img src="../../../assets/imagenes/logoCobraKai.png" class="logI">
+        <br>
+        <img src="../../../assets/imagenes/Cobra-Kai-logo-white.png" class="logI">
+        </div>
+      </div>
+      <div class="col-lg-6 col-xs-12">
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+          <div class="form-group">
+            <label for="empresa">Nombre de la empresa</label>
+            <input type="text" class="form-control" id="empresa" name="empresa" [(ngModel)]="experiencia.empresa" required>
+          </div>
+          <div class="form-group">
+            <label for="puesto">Puesto</label>
+            <input type="text" class="form-control" id="puesto" name="puesto" [(ngModel)]="experiencia.puesto" required>
+          </div>
+          <div class="form-group">
+            <label for="anioIngExp">Año de Ingreso</label>
+            <input type="text" class="form-control" id="anioIngExp" name="anioIngExp" [(ngModel)]="experiencia.anioIngExp" required>
+          </div>
+          <div class="form-group">
+            <label for="expe.anioEgExp">Año de Egreso</label>
+            <input type="text" class="form-control" id="anioEgExp" name="anioEgExp" [(ngModel)]="experiencia.anioEgExp" required>
+          </div>
+          <div class="form-group">
+            <label for="descripcionExp">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="experiencia.descripcion"
+              required>
+          </div>
+          <div style="margin: 20px; text-align: center;">
+            <button class="btn">
+              Actualizar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div >
+      <app-boton-volver></app-boton-volver>
+      <br>
+    </div>
+  </div>
+</div>
+
