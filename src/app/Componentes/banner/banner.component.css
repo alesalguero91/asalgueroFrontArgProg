@@ -1,9 +1,9 @@
 .wrap{
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../../../assets/imagenes/cobraKaiBanner.png);
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../assets/imagenes/cobraKaiBannerAmplio.png);
   background-size: cover;
-  background-position-y: center;
+  background-position-y: bottom;
   background-position-x: center;
 
   justify-content: center;
@@ -14,8 +14,8 @@
   width: 300px;
 }
 .container{
-  height: 100vw;
-  width: 100vh;
+  height: 100%;
+  width: 100%;
 }
 .saludo{
 
