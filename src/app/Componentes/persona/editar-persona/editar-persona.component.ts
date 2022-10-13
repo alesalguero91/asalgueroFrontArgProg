@@ -29,6 +29,7 @@ export class EditarPersonaComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id']
     this.personaService.update(id, this.persona).subscribe(
       data => {
+        alert('Perfil Actualizado')
         this.router.navigate([''])
       }
     )

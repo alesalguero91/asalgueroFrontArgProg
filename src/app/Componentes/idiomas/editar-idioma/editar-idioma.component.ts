@@ -28,7 +28,7 @@ export class EditarIdiomaComponent implements OnInit {
     this.idiomaService.updateLanguage(id, this.idioma).subscribe(
       data => {
         alert('Actualizado')
-        this.router.navigate(['/portafolio'])
+        this.router.navigate([''])
       }
     )
   }

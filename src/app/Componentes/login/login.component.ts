@@ -19,6 +19,7 @@ export class LoginComponent implements OnInit {
   roles : string[] = [];
   errorMsj!: string
 
+
   constructor(private tokenService: TokenService, private authService: AuthService, private router:Router) { }
 
   ngOnInit(): void {
@@ -43,6 +44,8 @@ export class LoginComponent implements OnInit {
 
       }
       , err =>{
+          alert("Usuario o contraseña invalidos")
+
           this.isLogged = false;
           this.isLogginFail= true;
           this.errorMsj= err.error.mensaje;
@@ -50,5 +53,7 @@ export class LoginComponent implements OnInit {
         }
         );
   }
+
+
 
 }
