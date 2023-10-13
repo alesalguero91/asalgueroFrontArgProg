@@ -8,7 +8,7 @@ import { Skill } from '../Modelos/skills';
 })
 export class SkillService {
 
-  URL = 'https://asalgueroargprogback.herokuapp.com/skill/'
+  URL = 'https://backendasal.onrender.com/skill/'
   constructor(private http: HttpClient) { }
 
   public getSkill():Observable<Skill[]>{

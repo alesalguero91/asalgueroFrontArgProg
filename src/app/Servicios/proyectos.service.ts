@@ -8,7 +8,7 @@ import { Proyecto } from '../Modelos/proyectoModel';
 })
 export class ProyectosService {
 
-  URL = 'https://asalgueroargprogback.herokuapp.com/proyecto/';
+  URL = 'https://backendasal.onrender.com/proyecto/';
 
   constructor(private http: HttpClient) { }
 

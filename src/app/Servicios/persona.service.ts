@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PersonaService {
 
-  URL = 'https://asalgueroargprogback.herokuapp.com/persona/';
+  URL = 'https://backendasal.onrender.com/persona/';
 
   constructor(private http: HttpClient) { }
 

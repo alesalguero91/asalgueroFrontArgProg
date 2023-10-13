@@ -8,7 +8,9 @@ import { Academico } from '../Modelos/academicoModel';
 })
 export class AcademicoService {
 
-  URL = 'https://asalgueroargprogback.herokuapp.com/academico/';
+  URL = 'https://backendasal.onrender.com/academico/';
+
+
 
   constructor(private http: HttpClient) { }
 

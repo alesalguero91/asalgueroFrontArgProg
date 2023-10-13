@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
 
-  URL = 'https://asalgueroargprogback.herokuapp.com/auth/'
+  URL = 'https://backendasal.onrender.com/auth/'
 
   constructor(private http: HttpClient) { }
 
