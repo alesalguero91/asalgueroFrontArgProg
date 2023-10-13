@@ -12,6 +12,7 @@ export class AcademicoService {
 
 
 
+
   constructor(private http: HttpClient) { }
 
   public getAcademico():Observable<Academico[]>{
